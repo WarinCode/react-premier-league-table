@@ -1,0 +1,12 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+*::selection {
+    background-color: #fc2c85;
+    color: white;
+}
+
+.league-qualification {
+    border-radius: 5px 0 0 5px;
+}
