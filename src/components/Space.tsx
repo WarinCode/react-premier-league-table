@@ -1,10 +1,11 @@
-import { ReactElement } from "react";
+import { ReactElement, FC } from "react";
+import { SpaceProps } from "../types";
 import TableRow from "../containers/TableRow";
 import TableDataCell from "../containers/TableDataCell";
 
-const Space = (): ReactElement => {
+const Space: FC<SpaceProps> = ({ ...attributes }): ReactElement => {
   return (
-    <TableRow>
+    <TableRow attributes={attributes}>
       <TableDataCell>
         <br />
       </TableDataCell>

@@ -23,12 +23,13 @@ const leagues: PremierLeague.LeagueQualification[] = [
 const TableFooter: FC<TableFooterProps> = ({ ...attributes }): ReactElement => {
   return (
     <tfoot {...attributes}>
-      <Space/>
+      <Space className="h-12" />
       <TableRow attributes={{ className: "w-full" }}>
         <TableDataCell attributes={{ colSpan: 10 }}>
           <h4 className="font-bold">European Qualification Key</h4>
         </TableDataCell>
       </TableRow>
+      <Space />
       <TableRow>
         <TableDataCell attributes={{ colSpan: 10 }}>
           <div className="flex items-center">

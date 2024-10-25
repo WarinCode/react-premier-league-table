@@ -2,7 +2,7 @@ import { ReactElement, FC } from "react";
 import PremierLeague, { PremierLeagueTableProps } from "../types";
 import Caption from "./Caption";
 import TableHeader from "./TableHeader";
-import TableConent from "../containers/TableConent";
+import TableContent from "../containers/TableContent";
 import TableRow from "../containers/TableRow";
 import TableDataCell from "../containers/TableDataCell";
 import TableFooter from "./TableFooter";
@@ -21,7 +21,7 @@ const PremierLeagueTable: FC<PremierLeagueTableProps> = ({
         }}
       />
       <TableHeader className="sticky top-0 z-10 h-12 border-b-[1px] border-x-[6px] border-x-transparent border-b-gray-300 bg-slate-50" />
-      <TableConent>
+      <TableContent>
         {teams.map(
           ({
             team: { name, logo },
@@ -86,7 +86,7 @@ const PremierLeagueTable: FC<PremierLeagueTableProps> = ({
             </TableRow>
           )
         )}
-      </TableConent>
+      </TableContent>
       <TableFooter className="text-primary h-20 tracking-wider" />
     </table>
   );
